@@ -1,10 +1,12 @@
-@extends('layouts.app')
+@extends('components.layouts.app')
 
-@section('tittle','Blog')
-
-@section('meta-description','Blog meta description')
-@section('content')
+@section('title','Blog')
+@section('meta-description', 'Blog meta description')
     
-
-<h1>Blog</h1>
+@section('content')
+    <h1>Blog</h1>
+    @foreach ($posts as $post)
+       <h2> {{ $post ['title']}} </h2>
+    @endforeach
+ 
 @endsection

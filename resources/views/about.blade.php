@@ -1,10 +1,10 @@
-@extends('layouts.app')
+@extends('components.layouts.app')
 
-@section('tittle','About')
-
-@section('meta-description','About meta description')
-@section('content')
+@section('title','About')
+@section('meta-description', 'Blog meta description')
     
-
-<h1>About</h1>
+@section('content')
+    <h1>About</h1>
+  
+ 
 @endsection
